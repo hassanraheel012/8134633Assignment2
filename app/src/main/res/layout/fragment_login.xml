@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coursenest_cream"
+    android:fillViewport="true"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutLoginContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/screen_margin"
+        android:paddingTop="16dp"
+        android:paddingEnd="@dimen/screen_margin"
+        android:paddingBottom="@dimen/screen_margin">
+
+        <!-- Brand: logo + CourseNest name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_coursenest_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/fredoka_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/coursenest_dark"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_tagline"
+            android:textAppearance="@style/TextAppearance.CourseNest.Body" />
+
+        <!-- Learn, Practise, Achieve visual -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/login_visual_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_login_visual" />
+
+        <!-- Welcome section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/login_welcome"
+            android:textAppearance="@style/TextAppearance.CourseNest.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/login_subtitle"
+            android:textAppearance="@style/TextAppearance.CourseNest.Body" />
+
+        <!-- Student ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/editStudentId"
+            android:text="@string/login_student_id"
+            android:textAppearance="@style/TextAppearance.CourseNest.FieldLabel" />
+
+        <EditText
+            android:id="@+id/editStudentId"
+            style="@style/Widget.CourseNest.Input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:autofillHints="username"
+            android:hint="@string/login_student_id_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/editPassword"
+            android:text="@string/login_password"
+            android:textAppearance="@style/TextAppearance.CourseNest.FieldLabel" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            style="@style/Widget.CourseNest.Input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:hint="@string/login_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:text="@string/login_hint"
+            android:textColor="@color/coursenest_grey"
+            android:textSize="13sp"
+            app:drawableStartCompat="@drawable/ic_info"
+            app:drawableTint="@color/coursenest_grey" />
+
+        <!-- Loading and error messages -->
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/fredoka_medium"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="@string/error_invalid_credentials"
+            tools:textColor="@color/coursenest_error"
+            tools:visibility="visible" />
+
+        <!-- Login button with a spinner shown while the request runs -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonLogin"
+                style="@style/Widget.CourseNest.Button"
+                android:layout_width="match_parent"
+                android:text="@string/login_button"
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textEnd" />
+
+            <ProgressBar
+                android:id="@+id/progressLogin"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:elevation="8dp"
+                android:indeterminateTint="@color/coursenest_white"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Big headings, e.g. "Welcome back" -->
+    <style name="TextAppearance.CourseNest.Headline" parent="">
+        <item name="android:fontFamily">@font/fredoka_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/coursenest_dark</item>
+    </style>
+
+    <!-- Section titles, e.g. "Your courses" -->
+    <style name="TextAppearance.CourseNest.SectionTitle" parent="">
+        <item name="android:fontFamily">@font/fredoka_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/coursenest_dark</item>
+    </style>
+
+    <!-- Grey supporting text under titles -->
+    <style name="TextAppearance.CourseNest.Body" parent="">
+        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/coursenest_grey</item>
+    </style>
+
+    <!-- Labels above the login fields -->
+    <style name="TextAppearance.CourseNest.FieldLabel" parent="">
+        <item name="android:fontFamily">@font/fredoka_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/coursenest_dark</item>
+    </style>
+
+    <!-- Small orange pill for course codes -->
+    <style name="Widget.CourseNest.Badge" parent="">
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:fontFamily">@font/fredoka_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/coursenest_orange</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Rounded white input field with an orange border when focused -->
+    <style name="Widget.CourseNest.Input" parent="">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">@color/coursenest_dark</item>
+        <item name="android:textColorHint">@color/coursenest_grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Solid orange rounded button -->
+    <style name="Widget.CourseNest.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/coursenest_orange</item>
+        <item name="android:fontFamily">@font/fredoka_semibold</item>
+        <item name="android:textColor">@color/coursenest_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="iconTint">@color/coursenest_white</item>
+    </style>
+
+    <!-- Outlined button used for "Try again" -->
+    <style name="Widget.CourseNest.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/fredoka_semibold</item>
+        <item name="android:textColor">@color/coursenest_orange</item>
+        <item name="android:textSize">15sp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="strokeColor">@color/coursenest_orange</item>
+    </style>
+
+    <!-- White course card with a soft border -->
+    <style name="Widget.CourseNest.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/coursenest_white</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/coursenest_card_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+</resources>

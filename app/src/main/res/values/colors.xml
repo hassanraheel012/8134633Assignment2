@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CourseNest palette: cream, orange and dark -->
+    <color name="coursenest_cream">#F7F1E7</color>
+    <color name="coursenest_soft_cream">#F3EBDD</color>
+    <color name="coursenest_orange">#FF7133</color>
+    <color name="coursenest_orange_soft">#FFE6D9</color>
+    <color name="coursenest_dark">#111827</color>
+    <color name="coursenest_dark_soft">#252F3F</color>
+    <color name="coursenest_white">#FFFFFF</color>
+    <color name="coursenest_grey">#667085</color>
+    <color name="coursenest_grey_light">#C7CDD6</color>
+    <color name="coursenest_border">#D1D5DB</color>
+    <color name="coursenest_card_border">#EADFCD</color>
+    <color name="coursenest_error">#D92D20</color>
+</resources>

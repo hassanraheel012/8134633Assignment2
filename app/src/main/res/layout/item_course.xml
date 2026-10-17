@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- One course card on the dashboard -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.CourseNest.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="@color/coursenest_orange_soft">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Course icon tile -->
+        <FrameLayout
+            android:id="@+id/layoutIconTile"
+            android:layout_width="@dimen/icon_tile_size"
+            android:layout_height="@dimen/icon_tile_size"
+            android:background="@drawable/bg_icon_tile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_course_book"
+                app:tint="@color/coursenest_orange" />
+        </FrameLayout>
+
+        <!-- Course code badge (hidden when the course has no code) -->
+        <TextView
+            android:id="@+id/textCourseCode"
+            style="@style/Widget.CourseNest.Badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            app:layout_constraintStart_toEndOf="@id/layoutIconTile"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="NIT3213" />
+
+        <TextView
+            android:id="@+id/textCourseTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/fredoka_semibold"
+            android:maxLines="2"
+            android:textColor="@color/coursenest_dark"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@id/imageChevron"
+            app:layout_constraintStart_toEndOf="@id/layoutIconTile"
+            app:layout_constraintTop_toBottomOf="@id/textCourseCode"
+            app:layout_goneMarginTop="0dp"
+            tools:text="Mobile Application Development" />
+
+        <TextView
+            android:id="@+id/textCourseSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/coursenest_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/textCourseTitle"
+            app:layout_constraintStart_toStartOf="@id/textCourseTitle"
+            app:layout_constraintTop_toBottomOf="@id/textCourseTitle"
+            tools:text="Instructor: Jane Doe\nDuration: 12 weeks" />
+
+        <ImageView
+            android:id="@+id/imageChevron"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/coursenest_grey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

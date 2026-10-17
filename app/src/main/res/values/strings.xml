@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">CourseNest</string>
+
+    <!-- Login screen -->
+    <string name="login_tagline">Your courses, all in one nest.</string>
+    <string name="login_visual_description">Learn, practise and achieve illustration</string>
+    <string name="login_welcome">Welcome back</string>
+    <string name="login_subtitle">Log in to see your courses.</string>
+    <string name="login_student_id">Student ID</string>
+    <string name="login_student_id_hint">e.g. 12345678</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_hint">Your first name</string>
+    <string name="login_hint">Use your student ID without the \"s\". Your password is your first name and is case sensitive.</string>
+    <string name="login_button">Log in</string>
+    <string name="login_loading">Logging you in… The server can take up to a minute to wake up.</string>
+
+    <!-- Dashboard screen -->
+    <string name="dashboard_welcome">Welcome back,</string>
+    <string name="dashboard_student">Student %1$s</string>
+    <string name="dashboard_logout">Log out</string>
+    <string name="dashboard_section_title">Your courses</string>
+    <string name="dashboard_section_subtitle">Tap a course to see its details.</string>
+    <string name="dashboard_loading">Loading your courses…</string>
+    <string name="dashboard_empty">There are no courses to show yet.</string>
+    <string name="dashboard_retry">Try again</string>
+    <plurals name="dashboard_course_count">
+        <item quantity="one">%d course</item>
+        <item quantity="other">%d courses</item>
+    </plurals>
+
+    <!-- Details screen -->
+    <string name="details_back">Back</string>
+    <string name="details_title">Course details</string>
+    <string name="details_information">Course information</string>
+    <string name="details_description">Description</string>
+
+    <!-- Errors -->
+    <string name="error_empty_fields">Please enter your student ID and password.</string>
+    <string name="error_invalid_credentials">Incorrect student ID or password. Please try again.</string>
+    <string name="error_server">Something went wrong on the server. Please try again.</string>
+    <string name="error_network">No internet connection. Check your connection and try again.</string>
+
+</resources>

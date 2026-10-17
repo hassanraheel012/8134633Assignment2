@@ -1,0 +1,20 @@
+<resources>
+    <!-- CourseNest uses one light (cream) theme in both light and dark mode. -->
+    <style name="Base.Theme.CourseNest" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/coursenest_orange</item>
+        <item name="colorOnPrimary">@color/coursenest_white</item>
+        <item name="colorSecondary">@color/coursenest_dark</item>
+        <item name="colorOutline">@color/coursenest_border</item>
+        <item name="colorSurface">@color/coursenest_cream</item>
+        <item name="colorOnSurface">@color/coursenest_dark</item>
+        <item name="android:colorBackground">@color/coursenest_cream</item>
+        <item name="android:windowBackground">@color/coursenest_cream</item>
+        <item name="colorOnBackground">@color/coursenest_dark</item>
+        <item name="colorControlActivated">@color/coursenest_orange</item>
+        <item name="android:textColorHighlight">@color/coursenest_orange_soft</item>
+        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="fontFamily">@font/fredoka_regular</item>
+    </style>
+
+    <style name="Theme.CourseNest" parent="Base.Theme.CourseNest" />
+</resources>

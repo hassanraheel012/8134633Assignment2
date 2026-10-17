@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single-colour version of the logo for themed launcher icons (Android 13+) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.62"
+        android:scaleY="0.62"
+        android:translateX="13.08"
+        android:translateY="9.67">
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M42,27L57,38Q66,35.5 75,38L90,27L90,73Q78,75 66,81Q54,75 42,73ZM50.5,54a5,5 0,1 0,10 0a5,5 0,1 0,-10 0ZM71.5,54a5,5 0,1 0,10 0a5,5 0,1 0,-10 0ZM59,64L66,60.5L73,64L66,74Z" />
+        <path
+            android:pathData="M21,77Q44,72 66,85L66,114Q46,102 25,104ZM111,77Q88,72 66,85L66,114Q86,102 107,104ZM35,89Q45,88.5 52,94M97,89Q87,88.5 80,94"
+            android:strokeWidth="3.5"
+            android:strokeColor="#FF000000"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

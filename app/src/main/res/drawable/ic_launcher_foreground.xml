@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The owl and book from the logo, scaled into the launcher icon's safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.62"
+        android:scaleY="0.62"
+        android:translateX="13.08"
+        android:translateY="9.67">
+        <path
+            android:fillColor="@color/coursenest_cream"
+            android:pathData="M42,27L57,38Q66,35.5 75,38L90,27L90,60Q90,78 66,86Q42,78 42,60Z" />
+        <path
+            android:fillColor="@color/coursenest_dark"
+            android:pathData="M50.5,54a5,5 0,1 0,10 0a5,5 0,1 0,-10 0ZM71.5,54a5,5 0,1 0,10 0a5,5 0,1 0,-10 0Z" />
+        <path
+            android:fillColor="@color/coursenest_orange"
+            android:pathData="M59,64L66,60.5L73,64L66,74Z" />
+        <path
+            android:fillColor="@color/coursenest_cream"
+            android:pathData="M21,77Q44,72 66,85L66,114Q46,102 25,104ZM111,77Q88,72 66,85L66,114Q86,102 107,104Z"
+            android:strokeWidth="3.5"
+            android:strokeColor="@color/coursenest_dark"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M35,89Q45,88.5 52,94M97,89Q87,88.5 80,94"
+            android:strokeWidth="3"
+            android:strokeColor="@color/coursenest_dark"
+            android:strokeLineCap="round" />
+    </group>
+</vector>
